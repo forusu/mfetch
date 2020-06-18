@@ -1,5 +1,3 @@
-#!bin/python3
-
 import platform
 import getpass
 from uptime import uptime
