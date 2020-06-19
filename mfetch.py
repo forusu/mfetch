@@ -22,19 +22,19 @@ if "indows" in spf:
 
     inf = """           
            _.-;;-._     {}@{}
-    '-..-'|   ||   |    |-sys: {}
-    '-..-'|_.-;;-._|    |-arc: {}
-    '-..-'|   ||   |    |-prc: {}
-    '-..-'|_.-''-._|    |-upt: {} days, {} hours, {} minutes
+    '-..-'|   ||   |    os:  {}
+    '-..-'|_.-;;-._|    arc: {}
+    '-..-'|   ||   |    prc: {}
+    '-..-'|_.-''-._|    upt: {} days, {} hours, {} minutes
     """
 
     if "Windows 10" in spf:
         inf = """           
                   _.-:    {}@{}
-             _.-:|   |    |-sys: {}
-            |   ||_.-|    |-arc: {}
-            |_.-||   |    |-prc: {}
-            |   ||_.-'    |-upt: {} days, {} hours, {} minutes
+             _.-:|   |    os:  {}
+            |   ||_.-|    arc: {}
+            |_.-||   |    prc: {}
+            |   ||_.-'    upt: {} days, {} hours, {} minutes
             |_.-'
         """
 
@@ -42,10 +42,10 @@ elif "inux" in spf:
 
     inf = """
              .---.         {}@{}
-            /     \        |-sys: {}
-            \.@-@./        |-arc: {}
-            /`\_/`\        |-prc: {}
-           //  _  \\\      |-upt: {} days, {} hours, {} minutes
+            /     \        os:  {}
+            \.@-@./        arc: {}
+            /`\_/`\        prc: {}
+           //  _  \\\      upt: {} days, {} hours, {} minutes
           | \     )|_ 
          /`\_`>  <_/ \\
          \__/'---'\__/
@@ -58,16 +58,22 @@ elif "Mac" in spf:
    			        .:'             
 			     _ :'_      
 			.'\`_\`-'_\`\    {}@{}
-			:        .-'     |-sys: {}
-			:        :       |-arc: {}
-			 :        `-;    |-prc: {}
-			  `._.-._.'      |-upt: {} days, {} hours, {} minutes
+			:        .-'     os:  {}
+			:        :       arc: {}
+			 :        `-;    prc: {}
+			  `._.-._.'      upt: {} days, {} hours, {} minutes
     """
 
 else:
     print("unsupported system!")  
 
 print(inf.format(usr, hst, spf, sys, prc, utd, uth, utm)) 
+
+
+
+
+
+
 
 
 
